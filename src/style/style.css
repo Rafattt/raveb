@@ -1,0 +1,45 @@
+html, body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: grey;
+}
+
+.menu {
+    background-color: white;
+    height:50px;
+}
+
+.menu-item {
+    margin: auto;
+    text-align: center;
+    z-index:1;
+    
+}
+
+.menu-item:hover {
+    color:white;
+    cursor: pointer;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index:0;
+}
+
+#title {
+    z-index:2;
+    position:absolute;
+    font-size: 44px;
+    color: white;
+    text-align: center;
+    top:350px;
+    left:550px;
+}
