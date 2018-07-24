@@ -26,12 +26,10 @@ html, body {
 }
 
 #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    z-index:0;
+    position: inherit;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 #title {
@@ -42,4 +40,11 @@ html, body {
     text-align: center;
     top:350px;
     left:550px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.test {
+    color: white;
+    font-size: 44px;
 }
