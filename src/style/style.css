@@ -1,27 +1,23 @@
 html, body {
     background-color: black;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding:0;
+  
 }
 
 .container-fluid {
     background-color: white;
     margin:0;
-    width:100%;
+
 }
 
-.row
-{
-margin-right: 0px;
-}
+
 
 #home {
     background-image: url("../img/background.jpg");
 
     /* Set a specific height */
-    height: 100vh; 
+    height: auto; 
+    min-height:100vh;
+   
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -42,19 +38,42 @@ h1,
 }
 
 
-#title {
-    z-index:2;
-    position:absolute;
-    font-size: 44px;
-    color: white;
-    text-align: center;
-    top:350px;
-    left:550px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+#home-images {
+    padding-top: 200px;
+    margin-bottom:30px;
+    
+}
+
+#home-laptop {
+  
+    max-width:100%;
+}
+
+#home-logo {
+  
+    max-width:100%;
 }
 
 .test {
     color: white;
     font-size: 44px;
 }
+
+#desc-box {
+    float: none; 
+    margin: 0 auto;
+    margin-top:20px;
+    background-color:white;
+    height:100%;
+    width:100%;
+    border: 2px solid black;
+    
+}
+
+.description {
+    color: black;
+    font-size:35px;
+    text-align: center;
+    line-height: 55px;
+}
+
