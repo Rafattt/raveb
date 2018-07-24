@@ -2,38 +2,43 @@ html, body {
     background-color: black;
     width: 100vw;
     height: 100vh;
+    margin: 0px;
+    padding:0;
 }
 
 .container-fluid {
-    background-color: grey;
+    background-color: white;
+    margin:0;
+    width:100%;
 }
 
-.header {
+.row
+{
+margin-right: 0px;
+}
+
+#home {
     background-image: url("../img/background.jpg");
+
+    /* Set a specific height */
     height: 100vh; 
-    max-width:100%;
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: -15px;
+     margin-right: -15px;
 
 }
 
-.menu {
-    background-color: white;
-    height:50px;
-}
-
-.menu-item {
-    margin: auto;
-    text-align: center;
-    z-index:1;
-    
-}
-
-.menu-item:hover {
-    color:white;
-    cursor: pointer;
+h1,
+.navbar-brand,
+.navbar-nav a {
+    font-family: 'Cinzel', serif!important;
+    font-weight: bold;
+    font-size:24px;
 }
 
 
