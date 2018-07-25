@@ -8,6 +8,31 @@ $(document).ready(function(){
     $('#blogCarousel').carousel({
         interval: 5000
 });
+
+
+
+/*$(function(){
+    $(".desc-box1").hover(
+      function () {
+        $(this).toggleClass('shake');
+        $(this).removeClass('slideInRight slow');
+      }, 
+    
+    );
+});
+*/
+
+
+$(window).scroll(function (event) {
+    console.log('afaf');
+});
     
 });
 
+
+   
+  
+
+$('#home').scroll(function() {
+    console.log('afaf');
+});
