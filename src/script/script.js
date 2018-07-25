@@ -9,7 +9,7 @@ $(document).ready(function(){
         interval: 5000
 });
 
-
+new WOW().init();
 
 /*$(function(){
     $(".desc-box1").hover(
