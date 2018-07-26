@@ -2,7 +2,6 @@ $(document).ready(function(){
     $( "a.scrollLink" ).click(function( event ) {
         event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
-        console.log('test');
     });
 
     $('#blogCarousel').carousel({
@@ -24,8 +23,10 @@ new WOW().init();
 
 
 $(window).scroll(function (event) {
-    console.log('afaf');
 });
+
+
+
     
 });
 
@@ -36,3 +37,6 @@ $(window).scroll(function (event) {
 $('#home').scroll(function() {
     console.log('afaf');
 });
+
+
+
