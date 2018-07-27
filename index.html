@@ -1,123 +1,287 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41553470-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41553470-15');
+</script>
+
+  <meta charset="utf-8">
   <title>Raveb - Website Design</title>
-  <meta name="description" content="Raveb - Website Design, Web Development Chicago">
+  <meta name="description" content="We are Web Design company from Chicago. We specialize in responsive websites that looks perfect both on computer, tablet and phone screen.">
   <meta name="author" content="Rafal Kmiecik">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" type="text/css" href="src/style/slick.css"/>
   <link rel="stylesheet" href="src/style/bootstrap.min.css">
+  <link rel="stylesheet" href="src/style/lightbox.css">
   <link rel="stylesheet" href="src/style/animate.css">
   <link rel="stylesheet" href="src/style/style.css">
- 
+
 
 </head>
 
 <body>
 
-    <div class="container-fluid">
-       
-                <!-- Just an image -->
-                <nav class="navbar navbar-light bg-light navbar-toggleable-lg align-items-end justify-content-end">
-                        <a class="navbar-brand scrollLink" href="#">
-                                <img src="src/img/logo.png" width="220" height="55" alt="">
-                              </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse float-right" id="navbarNav">
-                          <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                              <a class="nav-link scrollLink" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link scrollLink" href="#why-us">Why Us?</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link scrollLink" href="#">Our Work</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link disabled scrollLink" href="#">Contact</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </nav>
-            
-                   
+  <div class="container-fluid">
 
-                    
-                      <div  class="row">
-                          <div class="col-md-12">
-                                <div class="container-fluid">
-                                        <div id="home" class="row vertical-center" id="home-images">
-                                            <div class="col-md-1"></div>
-                                            <div class="col-md-5 col-push-5">
-                                                    <img class="img-fluid animated slideInLeft 4s" id="home-laptop"src="src/img/respons.png"  alt="">
-                                            </div>
-                                         
-                                            <div class="col-md-5 col-pull-5">
-                                               
-                                                    <img class="img-fluid center-block animated slideInRight slow" id="home-logo"src="src/img/logowhite.png" alt="">
-                                                    <div class="row rot">
-                                                            <div class="desc-box1 animated slideInRight slow">
-                                                                <h1 id="description1">CHICAGO RESPONSIVE</h1>
-                                                             </div>
-                                                     </div>
-                                                     <div class="row rot">
-                                                            <div class="desc-box2 animated slideInRight slow">
-                                                                <h1 id="description2">WEBSITES DESIGN</h1>
-                                                             </div>
-                                                     </div>
-                                                    
-                                            </div>
-                                            <div class="col-md-1"></div>
-                                        </div>
-                                    
-                                </div>
-                              
-                          </div>
-                         
-                          <div class="row downArrow bounce">
-                              <a href="#why-us" class="scrollLink">
-                              <img width="40" height="40" alt="" 
-                              src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
-                            </a>
-                          </div>
-                       
-                      </div>
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light navbar-toggleable-lg align-items-end justify-content-end">
+      <a class="navbar-brand scrollLink" href="#">
+        <img src="src/img/logo.png" width="220" height="55" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link scrollLink" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollLink" href="#why-us">Why Us?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollLink" href="#our-work">Our Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollLink" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-                      <div id="why-us" class="row">
-                        <div class="col-md-12 animated slideInUp slow">
-                          <h2 id="why-us-title">Why Us?</h2>
-                        </div>
-                        <div class="row" id="why-row">
-                          <div class="col-md-1">
 
-                          </div>
-                          <div class="col-md-6" id="why-text">
-                              Unlike most companies we are specialised in 'hardcoding' - websites made that way are usualy much faster than websites build in 
-                              web editors like wordpress. Website speed is one of most important 
-                              factors that decides of place in Google search engine and is also one of most important things for people who visit your website. 
-                          </div>
-                          <div class="col-md-5">
-                              <img class="img-fluid center-block animated slideInRight slow" id="home-logo"src="src/img/lapcode.png" width="400" height="120" alt="">
-                          </div>
-                        </div>
-                        
-                       
-                      </div>
-                   
-                      
-   
-            
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container-fluid">
+          <div id="home" class="row vertical-center" id="home-images">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-push-5">
+              <img class="img-fluid animated slideInLeft 4s" id="home-laptop" src="src/img/responsiv.png" alt="Resposive Web Design Chicago">
+            </div>
+
+            <div class="col-md-5 col-pull-5">
+
+              <img class="img-fluid center-block animated zoomIn slow" id="home-logo" src="src/img/logowhite.png" alt="raVeb chicago web design agency">
+              <div class="row rot">
+                <div class="desc-box1 animated slideInRight slow">
+                  <h1 id="description1">CHICAGO RESPONSIVE</h1>
+                </div>
+              </div>
+              <div class="row rot">
+                <div class="desc-box2 animated slideInRight slow">
+                  <h1 id="description2">WEBSITES DESIGN</h1>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row downArrow bounce">
+        <a href="#why-us" class="scrollLink">
+          <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
+          />
+        </a>
+      </div>
 
     </div>
+
+    
+        <div id="why-us" class="row">
+            <div class="col-md-12 animated slideInUp slow">
+              <h2 class="why-us-title">Why Us?</h2>
+              <div class="row" id="why-row">
+                  <div class="col-md-1">
+          
+                  </div>
+                  <div class="col-md-6 animated slideInLeft slow wow" id="why-text">
+                    Unlike most companies we specialize in 'hardcoding' - websites made that way are usually much faster than websites build
+                    in web editors like wordpress (but we also coding with wordpress if it is what you wants). Website speed is one
+                    of most important factors that decides of place in Google search engine and is also one of most important things
+                    for people who visit your website. We create responsive websites that looks perfect both on computer, tablet and
+                    phone screen. We build our websites from from scratch so every project is unique and stands out from competitors.
+                    If you are looking for fast, unique website <a class="scrollLink" href="#contact">contact us</a> today!
+                  </div>
+                  <div class="col-md-5 animated slideInRight wow">
+                    <img class="img-fluid center-block animated slideInRight slow wow" src="src/img/lapcode.png" alt="">
+                  </div>
+                  
+                </div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                      <div class="col-md-8 animated slideInUp slow">
+                        <h2 class="why-us-title">Technologies We Use:</h2>
+                      </div>
+                    <div class="col-md-2"></div>
+                </div>
+                <div class="row icons-container animated slideInUp slow wow">
+                    <div class="col-md-2 offset-1">
+                      <img class="icons center-block img-fluid" src="src/img/icons/html-5.svg" alt="html website chicago">
+                    </div>
+                    <div class="col-md-2">
+                      <img class="icons center-block img-fluid" src="src/img/icons/css-3.svg" alt="css website chicago">
+                    </div>
+                    <div class="col-md-2">
+                      <img class="icons center-block img-fluid" src="src/img/icons/javascript.svg" alt="javascript programming chicago" style="padding-top:30px;">
+                    </div>
+                    <div class="col-md-2">
+                      <img class="icons center-block img-fluid" src="src/img/icons/jquery.gif" alt="jquery programming chicago" style="padding-top:30px;">
+                    </div>
+                    <div class="col-md-2">
+                      <img class="icons center-block img-fluid" src="src/img/icons/php.png" alt="php programming chicago">
+                    </div>
+              
+              
+                  </div>
+            </div>
+            
+            
+              <div class="row downArrow bounce">
+                <a href="#our-work" class="scrollLink">
+                  <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
+                  />
+                </a>
+              </div>
+          </div>
+    
+    
+    
+
+
  
+    <div id="our-work" class="row">
+        <div class="col-md-12 animated slideInUp slow wow">
+          <h2 id="work-title">Our Work:</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 coming-box">
+                        <img class="center-block img-fluid" src="src/img/comingsoon.png" alt="html website chicago">
+
+                </div>
+            </div>
+            
+</div>
+
+
+    </div>
+    <div class="row downArrow whiteArrow bounce">
+        <a href="#contact" class="scrollLink">
+          <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4="
+          />
+        </a>
+      </div>
+
+      <div class="row" id="contact">
+        <div class="container">
+            <div class="col-md-12 animated slideInUp slow wow">
+                <h2 class="why-us-title">Contact Us</h2>
+                </div>
+            <form id="contact-form" method="post" action="src/script/contact.php" role="form" class="animated slideInUp slow wow">
+
+                <div class="messages"></div>
+            
+                <div class="controls">
+            
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted"><strong>*</strong> These fields are required. .</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+      </div>
+      <footer id="footer" class="row">
+        <div class="col-md-3"><a href="#home"><img class="img-fluid center-block" id="footer-logo" src="src/img/logowhite.png" alt="" ></a></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><a href="https://www.facebook.com/ravebdesign/" target="_blank"><img class="img-fluid center-block" id="footer-facebook" src="src/img/facebook.png" alt="" ></a></div>
+
+      </footer>
+
+  </div>
+  
+  
+
+
+
+
+  
+
   <script src="src/script/jquery-3.3.1.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <script src="src/script/bootstrap.min.js"></script>
+  <script src="src/script/bootstrap.min.js"></script>
+  <script src="src/script/wow.min.js"></script>
+  <script src="src/script/lightbox.js"></script>
+  <script src="src/script/contact.js"></script>
   <script src="src/script/script.js"></script>
 </body>
+
 </html>
