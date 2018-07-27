@@ -51,6 +51,9 @@
         font-size:26px!important;
         text-align:center!important;
     }
+    .downArrow{
+        display: none;
+    }
 }
 
 html, body {
